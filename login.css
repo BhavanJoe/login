@@ -1,0 +1,64 @@
+.border{
+    width:50%;
+    height:380px;
+    border:2px;
+    border-style:groove;
+    background:url(bg3.jpg),linear-gradient(rgb(0, 142, 50),rgb(6, 94, 85));
+    background-blend-mode:overlay;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 120px;
+    margin-top: 100px;
+    box-shadow: 60px 40px 40px 20px rgb(2, 89, 113);
+}
+
+div font{
+    padding-left: -450px;
+}
+ input[type="text"]{
+    width:60%;
+    height:30px;
+    border:2px;
+    border-style: groove;
+    background-color:transparent;
+    color: aliceblue;
+    text-emphasis-color: teal;    
+    padding-left: -150px;
+    margin-left: 150px;
+    margin-right:500px;
+}
+input[type="password"]{
+    width:60%;
+    height:30px;
+    border:2px;
+    border-style: groove;
+    background-color:transparent;
+    color: aliceblue;
+    padding-left: -150px;
+    margin-top: 30px;
+    margin-left: 150px;
+    margin-right:500px;
+}
+
+input[type="submit"]{
+    color:rgb(1, 94, 94);
+    font-size: 20px;
+    background-color: rgb(3, 135, 71);
+    width:40%;
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 30px;
+    transition:2s;
+    border-radius: 30%;
+}
+ input[type="submit"]:hover{
+    color:blue;
+    font-size:40px;
+    background-color:teal;
+    box-shadow: 20px 10px 20px teal;
+}
+h1{
+    color: azure;
+}

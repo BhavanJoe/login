@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body background="bg3.jpg">
+    <div class="border">
+        <div class="box">
+            <h1 align="center">Login</h1>
+        <input type="text" id="name" placeholder="enter your name">
+        <h3 align="center" id="para"></h3>
+        <input type="password"  id="password" placeholder="enter password">
+        <h3 align="center" id="pass"></h3>
+        <input type="submit" value="login" onclick="func()">
+       
+    </div>
+    <script>
+        function func(){
+            var user=document.getElementById("name");
+            var para=document.getElementById("para");
+            para.style.color="red";
+            if(user.value==""){
+                para.textContent="Please enter required details";
+                user.style.borderColor="red";
+            }
+            else{
+                para.textContent="";
+                user.style.borderColor="";
+                user.style.backgroundColor="";
+            }
+
+            var password=document.getElementById("password");
+            var pass=document.getElementById("pass");
+            pass.style.color="red"
+            if(password.value.length <8)
+        {
+            pass.textContent="Password Must Contain 8 characters and above";
+            password.style.borderColor="red";
+        }
+        else{
+            pass.textContent="";
+            password.style.borderColor="";
+        }
+        if(user.value&&password.value!="")
+        {
+            alert("Login Success")
+        }
+    }
+    </script>
+    
+</body>
+</html>
